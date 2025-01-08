@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 # Set if you want to check whether a specific key (or accessory!) is in the scan results.
 # Make sure to enter its private key!
 # Leave empty (= None) to not check.
-CHECK_KEY = KeyPair.from_b64("")
+CHECK_KEY = None # KeyPair.from_b64("")
 
 
 def _print_nearby(device: NearbyOfflineFindingDevice) -> None:
